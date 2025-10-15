@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Resume and Bio-data of Varsha Annappa Madival" />
+  <title>Varsha Annappa Madival - Resume & Bio-data</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(to right, #fce3ec, #f9fbe7); /* New background */
+      color: #1a1a1a;
+    }
+
+    header {
+      background: #004d40; /* Dark teal */
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffcc80; /* Soft orange */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: white;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 30px 20px;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+      opacity: 1;
+    }
+
+    section h2 {
+      color: #00695c; /* Deep teal */
+      margin-bottom: 20px;
+    }
+
+    /* Card style container */
+    section {
+      background: white;
+      margin: 30px auto;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      text-align: left;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th {
+      background: #00796b;
+      color: white;
+    }
+
+    td, th {
+      padding: 14px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f1f1f1;
+    }
+
+    table tr:hover {
+      background-color: #e0f2f1;
+    }
+
+    footer {
+      background: #00332d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .resume-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .profile-pic,
+    .home-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00796b;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .home-photo {
+      width: 220px;
+      height: 220px;
+      margin: 20px 0;
+    }
+
+    .profile-pic:hover,
+    .home-photo:hover {
+      transform: scale(1.05);
+    }
+
+    .resume-details {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .intro-text {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .resume-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .resume-details {
+        text-align: center;
+      }
+
+      ul {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" onclick="showSection('home', event)" class="active">Home</a>
+      <a href="#" onclick="showSection('resume', event)">Resume</a>
+      <a href="#" onclick="showSection('biodata', event)">Bio-data</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="active">
+    <h2>Welcome</h2>
+    <p class="intro-text">Hello! I am <b>Varsha Annappa Madival</b></p>
+    <img src="C:\Users\ASUS\Downloads\mypic.jpeg" alt="Varsha's Profile Picture" class="home-photo" loading="lazy" />
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="resume-container">
+      <img src="C:\Users\ASUS\Downloads\mypic.jpeg" alt="Varsha's Resume Photo" class="profile-pic" loading="lazy" />
+
+      <div class="resume-details">
+        <h3>Education</h3>
+        <ul>
+          <li>Pre-University Course – M.E.S. Chaitanya Pre-University College, Sirsi</li>
+          <li>BE in Computer Science – Vivekananda College of Engineering and Technology, Puttur</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Python</li>
+        </ul>
+
+        <h3>Project</h3>
+        <p><b>Daily Plastic Usage Tracker</b> – in progress.</p>
+
+        <h3>Achievements</h3>
+        <ul>
+          <li>Sports participation</li>
+          <li>State level volleyball player</li>
+        </ul>
+
+        <h3>Courses</h3>
+        <ul>
+          <li>Introduction to Digital Marketing</li>
+          <li>Design Thinking</li>
+          <li>Linux for Beginners</li>
+        </ul>
+
+        <h3>Interests</h3>
+        <ul>
+          <li>Travelling</li>
+          <li>Dancing</li>
+          <li>Singing</li>
+          <li>Reading</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio-data Section -->
+  <section id="biodata">
+    <h2>Bio-data</h2>
+    <table>
+      <tr><th>Name</th><td>Varsha Annappa Madival</td></tr>
+      <tr><th>Date of Birth</th><td>13-04-2005</td></tr>
+      <tr><th>Gender</th><td>Female</td></tr>
+      <tr><th>Nationality</th><td>Indian</td></tr>
+      <tr><th>Languages Known</th><td>English, Kannada, Hindi</td></tr>
+      <tr><th>Hobbies</th><td>Cooking, Dancing, Reading books</td></tr>
+      <tr><th>Mother's Name</th><td>Bhagya Annappa Madival</td></tr>
+      <tr><th>Father's Name</th><td>Annappa M Madival</td></tr>
+      <tr><th>Email</th><td><a href="mailto:varshamadival161@gmail.com">varshamadival161@gmail.com</a></td></tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 Varsha Annappa Madival</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId, event) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(sectionId).classList.add("active");
+
+      document.querySelectorAll("nav a").forEach(link => link.classList.remove("active"));
+      event.target.classList.add("active");
+    }
+  </script>
+</body>
+</html>
